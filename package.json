@@ -1,0 +1,40 @@
+{
+  "name": "bambam",
+  "version": "1.0.0",
+  "main": "dist/bambam.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "test": "nyc ava"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "pluralize": "^7.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/register": "^7.0.0",
+    "ava": "1.0.0-beta.8",
+    "babel-plugin-root-import": "^6.1.0",
+    "eslint": "^5.6.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-import-resolver-babel-plugin-root-import": "^1.1.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "knex": "^0.15.2",
+    "nyc": "^13.0.1",
+    "sinon": "^6.3.5",
+    "sqlite3": "^4.0.2"
+  },
+  "ava": {
+    "require": [
+      "@babel/register",
+      "@babel/polyfill"
+    ]
+  }
+}
